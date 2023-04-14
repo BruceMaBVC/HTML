@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>HTML Cheat Sheet</title>
+    <link rel="stylesheet" href="Main.css">
+  </head>
+
+  <body>
+    <div class="Head">HTML Cheat Sheet</div>
+    <nav>
+      <ul>
+        <li><a href="Main.html">My Resume</a></li>
+        <li><a href="HtmlCheatSheet.html">HTML Cheat Sheet</a></li>
+        <li><a href="CSSCheatSheet.html">CSS Cheat Sheet</a></li>
+      </ul>
+    </nav>
+    <tr>
+        <div id="navigation">
+          <button id="html-btn" onclick="goToHTML()">Back to Home</button>
+        </div>
+      </td>
+    </tr>
+    <table class="CheatSheetTable">
+      <thead>
+        <tr>
+          <th>Element</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'a-info')"> &lt;a&gt;</a></td>
+          <td>Create a link to a website:</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'b-info')">&lt;b&gt;</a></td>
+          <td>Make some text bold</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'div-info')">&lt;div&gt;</a></td>
+          <td>Add a &lt;div&gt section in a document</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'form-info')">&lt;form&gt;</a></td>
+          <td>Create an HTML form for user input</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'img-info')">&lt;img&gt;</a></td>
+          <td>insert an image</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'nav-info')">&lt;nav&gt;</a></td>
+          <td>Defines a set of navigation link</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'dt-info')">&lt;dt&gt;</a></td>
+          <td>defines a term/name in a description list</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'H1H6-info')">&lt;h1&gt-&lt;h6&gt;</a></td>
+          <td>Six different HTML headings</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'option-info')">&lt;option&gt;</a></td>
+          <td>A drop-down list</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'select-info')">&lt;select&gt;</a></td>
+          <td>A drop-down list</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'style-info')">&lt;style&gt;</a></td>
+          <td>Use of the &lt;style&gt; element to apply a simple style sheet to an &lt;HTML&gt; document:</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'sup-info')">&lt;sup&gt;</a></td>
+          <td>Superscript text</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'th-info')">&lt;th&gt;</a></td>
+          <td>HTML table with rows, header cells and data cells</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'u-info')">&lt;u&gt;</a></td>
+          <td>underline words</td>
+        </tr>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event, 'ul-info')">&lt;ul&gt;</a></td>
+          <td>An unordered HTML list</td>
+        </tr>
+      </tbody>
+
+    </table>
+    <p>Source from w3schools.com</p>
+    <br>
+    
+    <div id="a-info" class="tabcontent">
+      <h3>HTML &lt;a&gt; Tag</h3>
+      <br>
+      <p>Example: "&lt;a href=&quot;https://www.google.com&quot;&gt;Visit google.com!&lt;a&gt; "</p>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>The &lt;a&gt tag defines a hyperlink, which is used to link from one page to another.</p>
+      <br>
+      <p>The most important attribute of the <span style="color: orange">&lt;a&gt;</span> element is the <span style="color: orange">href</span> attribute, which indicates the link's destination.</p>
+      <br>
+      <p>By default, links will appear as follows in all browsers:</p>
+      <br>
+      <ul class="CS-disc">
+        <li>An unvisited link is underlined and blue</li>
+        <li>visited link is underlined and purple</li>
+        <li>An active link is underlined and red</li>   
+      </ul>
+      <br>
+      <br>
+    </div>
+    
+    <div id="b-info" class="tabcontent">
+      <h3>HTML &lt;b&gt; Tag</h3>
+      <br>
+      <p>Example: This is normal text, <b>this is bold text</b></p>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>The <span style="color: orange">&lt;b&gt;</span> tag specifies bold text without any extra importance.</p>
+      <br>
+      <br>
+    </div>
+
+    <div id="div-info" class="tabcontent">
+      <h3>HTML &lt;div&gt; Tag</h3>
+      <br>
+      <p>The <span style="color: orange">&lt;div&gt;</span> section in a document can be styled with CSS</b></p>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>The <span style="color: orange">&lt;div&gt;</span> tag defines a division or a section in an HTML document.</p>
+      <br>
+      <p>The <span style="color: orange">&lt;div&gt;</span> tag is used as a container for HTML elements - which is then styled with CSS or manipulated with JavaScript.</p>
+      <br>
+      <p>The <span style="color: orange">&lt;div&gt;</span> tag is easily styled by using the class or id attribute.</p>
+      <br>
+      <p>Any sort of content can be put inside the <span style="color: orange">&lt;div&gt;</span> tag! </p>
+      <br>
+      <p><b>Note:</b> By default, browsers always place a line break before and after the <span style="color: orange">&lt;div&gt;</span> element.</p>
+      <br>
+      <br>
+    </div>
+
+    <div id="form-info" class="tabcontent">
+      <h3>HTML &lt;form&gt; Tag</h3>
+      <br>
+      <p>The <span style="color: orange">&lt;form&gt;</span> tag is used to create an HTML form for user input.</b></p>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>The <span style="color: orange">&lt;form&gt;</span> element can contain one or more of the following form elements:</p>
+      <br>
+      <ul class="CS-disc">
+        <li>&lt;input&gt;</li>
+        <li>&lt;textarea&gt;</li>
+        <li>&lt;button&gt;</li>
+        <li>&lt;select&gt;</li>
+        <li>&lt;option&gt;</li>
+        <li>&lt;optgroup&gt;</li>
+        <li>&lt;fieldset&gt;</li>
+        <li>&lt;label&gt;</li>
+        <li>&lt;output&gt;</li>
+      </ul>
+      <br>
+      <br>
+    </div>
+
+    <div id="img-info" class="tabcontent">
+      <h3>HTML &lt;img&gt; Tag</h3>
+      <br>
+      <p>The <span style="color: orange">&lt;img&gt;</span> is used to embed an image in an HTML page.</b></p>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Images are not technically inserted into a web page; images are linked to web pages. The <span style="color: orange">&lt;img&gt;</span> tag creates a holding space for the referenced image.</p>
+      <br>
+      <p>The <span style="color: orange">&lt;img&gt;</span> tag tag has two required attributes:</p>
+      <br>
+      <ul class="CS-disc"></ul>
+          <li>src - Specifies the path to the image</li>
+          <br>
+          <li>alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed</li>
+      </ul>
+      <br>
+      <p><b>Note:</b> Also, always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads.</p>
+      <br>
+      <p><b>Tip:</b> To link an image to another document, simply nest the <span style="color: orange">&lt;img&gt;</span> tag inside an <span style="color: orange">&lt;a&gt;</span> tag.</p>
+      <br>
+      <br>
+    </div>
+
+    <div id="nav-info" class="tabcontent">
+      <h3>HTML &lt;nav&gt; Tag</h3>
+      <br>
+      <p>The <span style="color: orange">&lt;nav&gt;</span> tag defines a set of navigation links.</p>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Notice that NOT all links of a document should be inside a <span style="color: orange">&lt;nav&gt;</span> element. The <span style="color: orange">&lt;nav&gt;</span> element is intended only for major blocks of navigation links.</p>
+      <br>
+      <p>Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.</p>
+      <br>
+    </div>
+
+    <div id="dt-info" class="tabcontent">
+      <h3>HTML &lt;dt&gt; Tag</h3>
+      <br>
+      <p>The <span style="color: orange">&lt;dt&gt;</span> tag defines a term/name in a description list.</p>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>The <span style="color: orange">&lt;dt&gt;</span> tag is used in conjunction with <span style="color: orange">&lt;dl&gt;</span> (defines a description list) and <span style="color: orange">&lt;dd&gt;</span> (describes each term/name).</p>
+      <br>
+      <br>
+    </div>
+
+    <div id="H1H6-info" class="tabcontent">
+      <h3>&lt;h1&gt-&lt;h6&gt</h3>
+      <br>
+      <p>The <span style="color: orange">&lt;h1&gt;</span> to <span style="color: orange">&lt;h6&gt;</span> tags are used to define HTML headings.</p>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p><span style="color: orange">&lt;h1&gt;</span> defines the most important heading. <span style="color: orange">&lt;h6&gt;</span> defines the least important heading.</p>
+      <br>
+      <p><b>Note:</b> Only use one <span style="color: orange">&lt;h1&gt;</span> per page - this should represent the main heading/subject for the whole page. Also, do not skip heading levels - start with <span style="color: orange">&lt;h1&gt;</span>, then use <span style="color: orange">&lt;h2&gt;</span>, and so on.</p>
+      <br>
+      <br>
+    </div>
+
+    <div id="option-info" class="tabcontent">
+      <h3>HTML &lt;option&gt; Tag</h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>The <span style="color: orange">&lt;option&gt;</span> tag defines an option in a select list.</p>
+      <br>
+      <p><span style="color: orange">&lt;option&gt;</span> elements go inside a <span style="color: orange">&lt;select&gt;</span>, <span style="color: orange">&lt;optgroup&gt;</span>, or <span style="color: orange">&lt;datalist&gt;</span> element.</p>
+      <br>
+      <p><b>Note:</b> The <span style="color: orange">&lt;option&gt;</span> tag can be used without any attributes, but you usually need the value attribute, which indicates what is sent to the server on form submission.</p>
+      <br>
+      <p><b>Tip:</b> If you have a long list of options, you can group related options within the <span style="color: orange">&lt;optgroup&gt;</span> tag. </p>
+        <br>
+        <br>
+    </div>
+
+    <div id="select-info" class="tabcontent">
+      <h3>HTML &lt;select&gt; Tag</h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>The <span style="color: orange">&lt;select&gt;</span> element is used to create a drop-down list.</p>
+      <br>
+      <p>The <span style="color: orange">&lt;select&gt;</span> element is most often used in a form, to collect user input.</p>
+      <br>
+      <p>The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the drop-down list will be submitted).</p>
+      <br>
+      <p>The id attribute is needed to associate the drop-down list with a label.</p>
+      <br>
+      <p>The <span style="color: orange">&lt;option&gt;</span> tags inside the <span style="color: orange">&lt;select&gt;</span> element define the available options in the drop-down list.</p>
+      <br>
+      <p><b>Tip:</b> Always add the <label> tag for best accessibility practices!</p>
+      <br>
+      <br>
+    </div>
+
+    <div id="style-info" class="tabcontent">
+      <h3>HTML &lt;style&gt; Tag</h3>
+      <br>
+      <p>The <span style="color: orange">&lt;style&gt;</span> tag is used to define style information (CSS) for a document.</p>
+      <br>
+      <p>Inside the <span style="color: orange">&lt;style&gt;</span> element you specify how HTML elements should render in a browser.</p>
+      <br>
+      <p><b>Note:</b> When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet. If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used (see example below)!</p>
+      <br>
+      <p><b>Tip:</b> To link to an external style sheet, use the <span style="color: orange">&lt;link&gt;</span> tag.</p>
+      <br>
+      <br>
+    </div>
+
+    <div id="sup-info" class="tabcontent">
+      <h3>HTML &lt;sup&gt; Tag</h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>The <span style="color: orange">&lt;sup&gt;</span> defines superscript text. Superscript text appears half a character above the normal line, and is sometimes rendered in a smaller font. Superscript text can be used for footnotes, like WWW[1].</p>
+      <br>
+      <p>Tip: Use the <span style="color: orange">&lt;sub&gt;</span> tag to define subscript text.</p>
+      <br>
+      <br>
+    </div>
+
+    <div id="th-info" class="tabcontent">
+      <h3>HTML &lt;th&gt; Tag</h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>The <span style="color: orange">&lt;th&gt;</span> tag defines a header cell in an HTML table.</p>
+      <br>
+      <p>An HTML table has two kinds of cells:</p>
+      <br>
+      <ul class="CS-disc">
+        <li>Header cells - contains header information (created with the <span style="color: orange">&lt;th&gt;</span> element)</li>
+        <li>Data cells - contains data (created with the <span style="color: orange">&lt;td&gt;</span> element)</li>
+      </ul>
+      <br>
+      <p>The text in <span style="color: orange">&lt;th&gt;</span> elements are bold and centered by default.</p>
+      <br>
+      <p>The text in <span style="color: orange">&lt;td&gt;</span>  elements are regular and left-aligned by default.</p>
+      <br>
+      <br>
+    </div>
+
+    <div id="u-info" class="tabcontent">
+      <h3>HTML &lt;u&gt; Tag</h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>The <span style="color: orange">&lt;u&gt;</span> tag represents some text that is unarticulated and styled differently from normal text, such as misspelled words or proper names in Chinese text. The content inside is typically displayed with an underline. You can change this with CSS. </p>
+      <br>
+      <p><b>Tip:</b> Avoid using the <span style="color: orange">&lt;u&gt;</span> element where it could be confused for a hyperlink!</p>
+    </div>
+
+    <div id="ul-info" class="tabcontent">
+      <h3>HTML &lt;ul&gt; Tag</h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>The <span style="color: orange">&lt;ul&gt;</span> tag defines an unordered (bulleted) list.</p>
+      <br>
+      <p>Use the <span style="color: orange">&lt;ul&gt;</span> tag together with the <span style="color: orange">&lt;li&gt;</span> tag to create unordered lists.</p>
+      <br>
+      <p><b>Tip:</b> Use CSS to style lists.</p>
+      <br>
+      <p><b>Tip:</b> For ordered lists, use the <span style="color: orange">&lt;ol&gt;</span> tag. </p>
+      <br>
+      <br>
+    </div>
+
+  
+
+
+  </body>
+  <script src="script.js"></script>
+</html>

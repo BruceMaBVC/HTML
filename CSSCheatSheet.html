@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS Cheat Sheet</title>
+    <link rel="stylesheet" href="Main.css">
+  </head>
+
+  <body>
+    <div class="Head">CSS Cheat Sheet</div>
+    <nav>
+      <ul>
+        <li><a href="Main.html">My Resume</a></li>
+        <li><a href="HtmlCheatSheet.html">HTML Cheat Sheet</a></li>
+        <li><a href="CSSCheatSheet.html">CSS Cheat Sheet</a></li>
+      </ul>
+    </nav>
+    <tr>
+        <div id="navigation">
+          <button id="html-btn" onclick="goToCSS()">Back to Home</button>
+        </div>
+      </td>
+    </tr>
+    <table class="CheatSheetTable">
+      <thead>
+        <tr>
+          <th>Property</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'background-info')"> <span style="color: orange">background</span></a></td>
+          <td>Set different background properties</td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'border-info')"> <span style="color: orange">border</span></a></td>
+          <td>Set the style of the borders</td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'boxsizing-info')"> <span style="color: orange">box-sizing</span></a></td>
+          <td>adjust the size of the box</td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'color-info')"> <span style="color: orange">color</span></a></td>
+          <td>Change the text-color</td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'cursor-info')"> <span style="color: orange">cursor</span></a></td>
+          <td>Change the cursor style</td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'display-info')"> <span style="color: orange">display</span></a></td>
+          <td>display inline, block, inline-block or none</td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'font-info')"> <span style="color: orange">font</span></a></td>
+          <td>font-sytle, font-weight, font-size, font-family ...etc </td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'letterspacing-info')"> <span style="color: orange">letter-spacing</span></a></td>
+          <td>Set the letter spacing for elements </td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'margin-info')"> <span style="color: orange">margin</span></a></td>
+          <td>margin setting </td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'padding-info')"> <span style="color: orange">padding</span></a></td>
+          <td>padding setting </td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'rotate-info')"> <span style="color: orange">rotate</span></a></td>
+          <td>Rotate property </td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'textalign-info')"> <span style="color: orange">text-align</span></a></td>
+          <td>text alignment for different &lt;div&gt; elements </td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'transition-info')"> <span style="color: orange">transition</span></a></td>
+          <td>Hover over a &lt;div&gt element to gradually change the width / height </td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'whitespace-info')"> <span style="color: orange">white-space</span></a></td>
+          <td>different white-space property </td>
+        </tr>
+
+        <tr>
+          <td><a href="#" class="tablink" onclick="openTab(event,'wordwrap-info')"> <span style="color: orange">word-wrap</span></a></td>
+          <td>Allow long words to be able to break and wrap onto the next line </td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Source from w3schools.com</p>
+    <br>
+
+    <div id="background-info" class="tabcontent">
+      <h3><span style="color: orange">background</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Demo of the different values of the background property.</p>
+      <br>
+      <div class="screen-box">
+        <div class="left-part">
+          <h3>Choose a background:</h3>
+          <div class="options">
+            <label>
+              <input type="radio" name="background" value="red" />
+              <span class="label-text">Red</span>
+            </label>
+            <label>
+              <input type="radio" name="background" value="blue" />
+              <span class="label-text">Blue</span>
+            </label>
+            <label>
+              <input type="radio" name="background" value="tree" />
+              <span class="label-text">tree (picture) </span>
+            </label>
+          </div>
+        </div>
+          <div class="right-part"></div>
+      </div>
+    </div>
+    
+      <div id="border-info" class="tabcontent">
+      <h3><span style="color: orange">border</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Set the style of the borders for different elements</p>
+      <br>
+      <div class="screen-box">
+        <div class="left-part">
+          <h3>Choose a border style:</h3>
+          <div class="options">
+            <label>
+              <input type="radio" name="border" value="borderRed" />
+              <span class="label-text">border: 5px solid red;</span>
+            </label>
+            <label>
+              <input type="radio" name="border" value="borderBlue" />
+              <span class="label-text">border: 10px dotted blue;</span>
+            </label>
+          </div>
+        </div>
+        <div class="right-part"></div>
+        <div class="inner-box"></div>
+      </div>
+    </div>
+ 
+    <div id="boxsizing-info" class="tabcontent">
+      <h3><span style="color: orange">border</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Set the size of the box </p>
+      <br>
+      <div class="screen-box">
+        <div class="left-part">
+          <h3>Choose a different size:</h3>
+          <div class="options">
+            <label>
+              <input type="radio" name="boxsize" value="boxisize1" />
+              <span class="label-text">box size: Width 300px, Height 200px</span>
+            </label>
+            <label>
+              <input type="radio" name="boxsize" value="boxsize2" />
+              <span class="label-text">box size: Width 100px, Height 80px</span>
+            </label>
+          </div>
+        </div>
+        <div class="right-part"></div>
+        <div class="innerbox1"></div>
+      </div>
+    </div>
+
+    <div id="color-info" class="tabcontent">
+      <h3><span style="color: orange">color</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Set the text-color with different elements</p>
+      <br>
+      <div class="screen-box">
+        <div class="left-part">
+          <h3>Choose a different color:</h3>
+          <div class="options">
+            <label>
+              <input type="radio" name="Color" value="red" />
+              <span class="label-text">Red</span>
+            </label>
+            <label>
+              <input type="radio" name="Color" value="green" />
+              <span class="label-text">#00ff00</span>
+            </label>
+            <label>
+              <input type="radio" name="Color" value="RGB" />
+              <span class="label-text"> RGB(0,0,255)</span>
+            </label>
+          </div>
+        </div>
+        <div class="right-part"></div>
+        <div class="innerbox1">
+          <p>Hello, It is my color</p>
+          <p>Hello, It is my color</p>
+          <p>Hello, It is my color</p>
+          <p>Hello, It is my color</p>
+          <p>Hello, It is my color</p>
+          <p>Hello, It is my color</p>
+          <p>Hello, It is my color</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="cursor-info" class="tabcontent">
+      <h3><span style="color: orange">color</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Set the text-color with different elements</p>
+      <br>
+      <div class="cursor">
+          <h3>Here below some of the choice, mouse over the words to change the mouse cursor.</h3>
+          <br>
+          <p style="cursor: alias; padding-left: 20px;">alias</p>
+          <br>
+          <p style="cursor: all-scroll; padding-left: 20px;">all-scroll</p>
+          <br>
+          <p style="cursor: cell; padding-left: 20px;">cell</p>
+          <br>
+          <p style="cursor: col-resize; padding-left: 20px;">col-resize</p>
+          <br>
+          <p style="cursor: copy; padding-left: 20px;">copy</p>
+          <br>
+          <p style="cursor: e-resize; padding-left: 20px;">e-resize</p>
+          <br>
+          <br>
+          <br>
+        </div>
+    </div>
+
+    <div id="display-info" class="tabcontent">
+      <h3><span style="color: orange">display</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Use of some different display values: <b>1-none, 2-inline, 3-block, 4-inline-block</b></p>
+      <br>
+      <div class="display">
+          <h3>Please find the effect below for the word <span style="color: red">Hello World</span></h3>
+          <br>
+          <h2>display: none:</h2>
+            <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p style="display:none; color:red"> HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+            </div>
+            <br>
+            <h2>display: inline:</h2>
+            <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p style="display:inline; color:red"> HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+            </div>
+            <br>
+            <h2>display: block:</h2>
+            <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p style="display:block; color:red">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+            </div>
+            <br>
+            <h2>display: inline-block:</h2>
+            <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. <p style="display:inline-block; color:red">HELLO WORLD!</p> Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+            </div>
+        </div>
+    </div>
+
+    <div id="font-info" class="tabcontent">
+      <h3><span style="color: orange">font</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Can set the font-style, font-weight, font-size, font-family ...etc</p>
+      <br>
+           <h2>font-style: caption</h2>
+            <p style="font: caption;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+            <br>
+            <h2>font-weight: 900</h2>
+            <p style="font-weight: 900;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+            <br>
+            <h2>font-size:xx-large</h2>
+            <p style="font-size:xx-large;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+            <br>
+            <h2>font-family - monospace</h2>
+            <p style="font-family: 'Courier New', Courier, monospace;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+            <br>
+            <br>
+    </div>
+  
+    <div id="letterspacing-info" class="tabcontent">
+      <h3><span style="color: orange">letter-spacing</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Set the letter spacing</p>
+      <br>
+           <h2>letter-spacing = 10px</h2>
+            <p style="letter-spacing: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+            <br>
+            <h2>leter-spacing = 2px</h2>
+            <p style="letter-spacing: 2px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+            <br>
+            <h2>leter-spacing = -3px</h2>
+            <p style="letter-spacing: -3px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.</p>
+            <br>
+            <br>
+    </div>
+
+    <div id="margin-info" class="tabcontent">
+      <h3><span style="color: orange">margin</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Set the margin of the paragraph</p>
+      <br>
+      <p>A paragraph with no specified margins.</p>
+      <br>
+      <p style="margin: 35px;">This paragraph has a margin of 35 pixels on all four sides.</p>
+      <br>
+      <br>
+    </div>
+
+    <div id="padding-info" class="tabcontent">
+      <h3><span style="color: orange">padding</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Set the padding</p>
+      <br>
+      <div class="screen-box">
+        <div class="left-part">
+          <h3>Choose a border style:</h3>
+          <div class="options">
+            <label>
+              <input type="radio" name="padding" value="5px" />
+              <span class="label-text">padding = 5px</span>
+            </label>
+            <label>
+              <input type="radio" name="padding" value="20px" />
+              <span class="label-text">padding = 20px;</span>
+            </label>
+          </div>
+        </div>
+        <div class="right-part"></div>
+        <div class="innerbox2"></div>
+      </div>
+    </div>
+
+    <div id="rotate-info" class="tabcontent">
+      <h3><span style="color: orange">Rotate</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Rotates div element</p>
+      <br>
+      <div class="screen-box">
+        <div class="left-part">
+          <h3>Rotation:</h3>
+          <div class="options">
+            <label>
+              <input type="radio" name="rotate" value="0degree" />
+              <span class="label-text">normal position</span>
+            </label>
+            <label>
+              <input type="radio" name="rotate" value="30degree" />
+              <span class="label-text">rotate value to 30 degrees;</span>
+            </label>
+            <label>
+              <input type="radio" name="rotate" value="-30degree" />
+              <span class="label-text">rotate value to -30 degrees;</span>
+            </label>
+          </div>
+        </div>
+        <div class="right-part"></div>
+        <div class="innerbox3"></div>
+      </div>
+    </div>
+
+    <div id="textalign-info" class="tabcontent">
+      <h3><span style="color: orange">text-align</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Set the text alignment for different div elements</b></p>
+      <br>
+      <div class="textalign">
+          <h3>Please find the effect below</h3>
+          <br>
+          <h2>text-align: center</h2>
+            <div style="text-align: center;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
+            </div>
+            <br>
+          <h2>text-align: left</h2>
+            <div style="text-align: left;">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
+            </div>
+            <br>
+          <h2>text-align: right</h2>
+            <div style="text-align: right">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
+            </div>
+            <br>
+          <h2>text-align: justify</h2>
+            <div style="text-align:justify">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit.
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <div id="transition-info" class="tabcontent">
+      <h3><span style="color: orange">transition</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>Hover over a &lt;div&gt; element to gradually change the width / height</p>
+      <br>
+      <div class="transit">
+      </div>
+    </div>
+
+    <div id="whitespace-info" class="tabcontent">
+      <h3><span style="color: orange">white-space</span></h3>
+      <br>
+      <p><b>Definition and Usage</b></p>
+      <br>
+      <p>different white-space property </p>
+      <br>
+      <h2>white-space: nowrap:</h2>
+      <p style="white-space: nowrap;">
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      </p>
+      <br>
+      <h2>white-space: normal:</h2>
+      <p style="white-space: normal;">
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      </p>
+      <br>
+      <h2>white-space: pre:</h2>
+      <p style="white-space: pre;">
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      This is some text. This is some text. This is some text.
+      </p>
+      </div>
+
+      <div id="wordwrap-info" class="tabcontent">
+        <h3><span style="color: orange">word-wrap</span></h3>
+        <br>
+        <p><b>Definition and Usage</b></p>
+        <br>
+        <p>The word-wrap property allows long words to be able to be broken and wrap onto the next line. </p>
+        <br>
+        <div>
+        <h2>word-wrap: normal (default):</h2>
+        <div style="word-wrap: normal; width: 250px; border: 1px solid #000000;"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will not break and wrap to the next line.</div>
+        <br>
+        <h2>word-wrap: break-word:</h2>
+        <div style="word-wrap:break-word; width: 250px; border: 1px solid #000000;"> This div contains a very long word: thisisaveryveryveryveryveryverylongword. The long word will break and wrap to the next line.</div>
+        </div>
+      </div>
+      <br>
+      <br>
+
+
+  </body>
+
+  <script src="script.js"></script>
+</html>
